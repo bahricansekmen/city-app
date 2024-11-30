@@ -52,27 +52,6 @@ public class MainActivity extends AppCompatActivity {
         RecyclerViewAdaptor recyclerViewAdaptor = new RecyclerViewAdaptor(sehirsimgeleriArrayList);
         binding.recyclerView.setAdapter(recyclerViewAdaptor);
 
-        /*
-        //Adaptor
-        //ListView
-
-        //mapping
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_expandable_list_item_1,
-                sehirsimgeleriArrayList.stream().map(Sehirsimgeleri -> Sehirsimgeleri.name).collect(Collectors.toList())
-        );
-        binding.listView.setAdapter(arrayAdapter);
-        binding.listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-               // Toast.makeText(MainActivity.this,sehirsimgeleriArrayList.get(position).name,Toast.LENGTH_SHORT).show();
-
-                Intent intent = new Intent(MainActivity.this, Detaylar.class);
-                intent.putExtra("sehirsimgeleri",sehirsimgeleriArrayList.get(position));
-                startActivity(intent);
-            }
-        });
-
-         */
+ 
     }
 }
